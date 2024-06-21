@@ -1,0 +1,19 @@
+igpu3 0311 python proj_final.py --date 2023_03_11 --session 0 --data_path /lab/tmpig13c/henghui/SAM/ --curr 1 --total 3
+igpu7 0714 07141x
+igpu8 0619 0730
+igpu 5 0330 0-6 x
+igpu13 0330 7-11 x 0808 0627
+igpu10 0620
+igpu14 0622 0624{12}
+igpu4 0624{345} ?
+igpu15 0705 07020 07021
+igpu20 0706(0)
+igpu21 0711(0) 0713(0)
+
+igpu22 0621
+? 0328(01)
+igpu23 0810
+igpu25  0328
+
+
+0311 0714 0619 igpu10:0620 0730 igpu15:0705(10c) igpu14:0622 igpu20:0706 0627 igpu21:0711(10c) igpu22:0621 igpu23:0810 0703

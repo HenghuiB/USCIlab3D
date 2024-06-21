@@ -1,0 +1,22 @@
+
+backup igpu21/home4/tmp/u/henghui  bag_dump
+backup igpu24/home2/kiran/backup  bag_dump
+backup tmpig20c gs_train
+err_gs/dump 13b
+2023_03_28 tmpig14c
+2023_03_29 tmpig14c not start 
+2023_03_30 tmpig15b igpu25 24 23
+2023_
+2023_06_21 10b
+2023_06_21 tmpig15b
+2023_06_22 /lab/tmpig15b/u/kiran/2023_06_22/
+2023_06_24 /lab/tmpig10b/kiran/gs_train/
+2023_06_28 20c copying
+2023_06_26 10b
+2023_06_27 15b
+07_03 10b
+2023_08_05 25c
+07_11 21c
+07_13 21c
+07_14 21c
+07_15 21c

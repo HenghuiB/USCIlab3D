@@ -1,0 +1,470 @@
+'##er': unlabeled
+'##ers': unlabeled
+'##hole': unlabeled
+'##hole cover': unlabeled
+'##icade': unlabeled
+'##lch': unlabeled
+'##light': light
+'##llard': bollard
+'##nt': vent
+'##pole': pole
+'##post': post
+'##rail': rail
+'##ree': tree
+'##ter': unlabeled
+'##ustrade': unlabeled
+_ rack: rack
+air: air
+air conditioner: air unit
+air conditioning unit: air unit
+air unit: air unit
+air vent: air vent
+architectural column: pillar
+art: public art
+artificial lighting: street light
+balcony: balcony
+balrade: rail
+balust: rail
+balustrade: balustrade
+banner: banner
+barr: construction barrier
+barrica: construction barrier
+barricade: construction barrier
+bay: bay
+bay marker: lettering
+bench: bench
+bicycle: bicycle
+bicycle rack: rack
+bicycle racks: rack
+bicycles: bicycle
+bike: bicycle
+bike _ rack: rack
+bike rack: rack
+bikes: bicycle
+billboard: advertisement
+bin: trash can
+blue sky: sky
+bollar: bollard
+bollard: bollard
+boy: person
+branch: branch
+branches: branch
+brick: brick
+brick paving: sidewalk
+brick walkway: sidewalk
+brick wall: wall
+bricklines: brick
+bricks: brick
+brickwall: wall
+building: building
+building exterior: building
+buildings: building
+bus: bus
+bus shelter: bus
+bus stop: bus
+bush: bush
+bushes: bushes
+canopy: canopy
+car: vehicle
+cart: vehicle
+ceiling: ceiling
+ceiling light: indoor light
+ceiling lights: indoor light
+cement: concrete
+chain: chain
+chain -: chain
+chain - fence: fence
+chain - link: fence
+chain - link fence: fence
+chain fence: fence
+chain link: fence
+chain link fence: fence
+chair: chair
+chairs: chair
+cloud: sky
+clouds: sky
+column: pillar
+concrete: concrete
+concrete floor: floor
+concrete flooring: floor
+concrete planter: planter
+concrete wall: wall
+conditioner: air unit
+conditioning unit: air unit
+cone: cone
+cones: cone
+construction: construction
+construction _ barrier: construction barrier
+construction _ site: construction site
+construction barrier: construction barrier
+construction cone: construction cone
+construction cones: construction cones
+construction equipment: construction
+construction fence: fence
+construction site: construction
+container: container
+cover: cover
+cross: cross
+crosswalk: crosswalk
+curb: curb
+dirt: soil
+door: door
+door handle: door handle
+door knob: door handle
+doorhandle: door handle
+doors: door
+doorway: doorway
+drain cover: conver
+drainage: drainage grate
+drainage grate: drainage grate
+driveway: pathway
+dump: trash can
+dumpster: trash can
+electric box: electric box
+electrical box: electric box
+emergency vehicle: vehicle
+empty space: space line
+entrance: entrance
+exterior lighting: street light
+fence: fence
+fencing: fence
+fire hydra: hydrant
+fire hydrant: hydrant
+flagpole: pole
+floor: floor
+flooring: floor
+flower: flower
+flower bed: flower
+flowerbed: flower
+flowering plants: plant
+flowers: flower
+foliage: vegetation
+fountain: fountain
+furniture: furniture
+garbage: garbage
+garbage can: trash can
+garden: garden
+garden bed: garden
+gate: gate
+gates: gate
+girl: person
+glass: glass
+glass reflection: reflection
+golf: golf cart
+golf cart: golf cart
+graffiti: graffiti
+grass: grass
+grass _ patch: grass
+grass area: grass
+grass patch: grass
+grassy area: grass
+gravel: gravel
+greenery: vegetation
+ground: ground
+hand: hand
+handicap: handicap
+handicap parking: parking lot
+handicap parking sign: parking symbol
+handicap parking space: parking lot
+handicap parking symbol: parking symbol
+handicap sign: parking symbol
+handicap space: parking lot
+handicap symbol: parking symbol
+handle: door handle
+handrail: handrail
+hedge: hedge
+hedges: hedge
+house: house
+human: person
+humans: person
+hydra: hydra
+hydrant: hydrant
+indoor light: indoor light
+indoor lighting: indoor light
+information sign: sign
+intersection: cross
+lamp: lamp
+lamp post: lamp post
+lamp posts: lamp post
+lamppost: lamp post
+lamps: lamp
+lane: road
+lane marker: road marking
+lanes: road
+lawn: grass
+leaf: leaf
+leaves: leaves
+lettering: lettering
+letters: lettering
+light: light
+lighting: light
+link fence: fence
+lot: parking lot
+man: person
+man cover: cover
+manhole: drain cover
+manhole cover: manhole cover
+metal fence: fence
+metal pole: pole
+motorcycle: motorcycle
+outdoor: outdoor
+outdoor furniture: furniture
+outdoor gear: gear
+outdoor light: light
+outdoor lighting: light
+outdoor seating: chair
+palm: palm
+palm tree: palm
+panel: solar panel
+park bench: bench
+parking: parking lot
+parking bay: parking lot
+parking bay marker: lettering
+parking curb: parking lot
+parking garage: parking lot
+parking lot: parking lot
+parking meter: parking meter
+parking sign: parking sign
+parking space: parking lot
+parking space line: parking space line
+parking space marker: parking space marker
+parking structure: parking structure
+parking symbol: parking symbol
+path: pathway
+pathway: pathway
+patio: patio
+patio area: patio
+patio umbrella: umbrella
+paved: pavement
+paved area: pavement
+paved stone: pavement
+paved surface: pavement
+paved walkway: sidewalk
+pavement: pavement
+paving: pavement
+paving stone: paving stone
+pebbles: gravel
+pedestrian cross: cross
+pedestrian crosswalk: crosswalk
+pedestrian walkway: pedestrian walkway
+people: person
+perimeter fence: fence
+person: person
+phone: phone
+pickup: vehicle
+pickup truck: vehicle
+pillar: pillar
+pip: pipe
+pipe: pipe
+pipeline: pipe
+pipes: pipe
+plant: plant
+plant pot: planter
+planter: planter
+planters: planter
+planting bed: plant
+plants: plant
+plaque: plaque
+plaques: plaque
+pole: pole
+porch: patio
+portable: portable
+portable toilet: toilet
+post: post
+posts: post
+pot: pot
+pot plant: planter
+potted: potted
+potted plant: planter
+public art: public art
+public phone: phone
+public seating: chair 
+public sign: sign
+rack: rack
+racks: rack
+rail: rail
+railing: rail
+railings: rail
+ramp: ramp
+recreational vehicle: vehicle
+recycling bin: trash can
+red _ curb: curb
+red curb: curb
+reflection: reflection
+reflections: reflection
+rental bikes: bicycle
+road: road
+road marking: road marking
+road markings: road marking
+road sign: road sign
+roadway: road
+rock: rock
+rocks: rock
+roof: roof
+roofing: roof
+rooftop: roof
+rubble: gravel
+scaffolding: scaffolding
+scfolding: scaffolding
+sculpture: sculpture
+seat: chair
+seating: chair
+shadow: shadow
+shadows: shadow
+shrub: shrub
+shrubbery: shrubbery
+shrubs: shrub
+shub: shrub
+sidewalk: sidewalk
+sign: sign
+signage: advertisement
+signpost: advertisement
+signs: sign
+sky: sky
+skylight: light
+soil: soil
+solar panel: solar panel
+space: space
+space line: space line
+space marker: parking lot
+stair: stair
+stair case: stair
+staircase: stair
+stairs: stair
+statue: statue
+statues: statue
+step: stair
+steps: stair
+stone: stone
+stop sign: stop sign
+street: street
+street light: street light
+street sign: street sign
+streetlight: outdoor lighting
+streetsign: street
+sun: sun
+sunlight: sunlight
+symbol: symbol
+table: table
+tables: table
+traffic bollard: bollard
+traffic cone: traffic cone
+traffic light: traffic light
+traffic sign: road marking
+trailer: vehicle
+trash: trash
+trash _ bin: trash can
+trash _ can: trash can
+trash bag: trash can
+trash bin: trash can
+trash can: trash can
+trash container: trash can
+trash rec: trash can
+trash recacle: trash can
+trash recept: trash can
+trash receptacle: trash can
+trashacle: trash can
+trashept: trash can
+tree: tree
+trees: tree
+truck: truck
+twilight: sun
+umbrella: umbrella
+unit: unit
+unlabeled: unlabeled
+utility pole: pole
+van: van
+vegetation: vegetation
+vehicle: vehicle
+vehicles: vehicle
+vent: vent
+ventilation: vent
+ventilation grill: ventilation grill
+ventilation grille: ventilation grill
+walkway: walkway
+wall: wall
+walls: wall
+warning sign: warning sign
+window: window
+windowpane: window
+windows: window
+"\u2018 staircase": stair
+"\u2018 handrail": rail
+"\u2018 lamp post": lamp post
+"\u2018 road": road
+"\u2018": unlabeled
+"\u2018 sign": unlabeled
+"\u2018 stairs": unlabeled
+"\u2018 chair": chair
+"\u2018 lamp": lamp
+"\u2018 building": building
+"\u2018 tree": tree
+"\u2018 bench": bench
+-: unlabeled
+flag: flag
+emergency call station: emergency station
+'##bery': unlabeled
+interior lighting: light
+lights: light
+pedestrian: person
+'##ster': ster
+poles: pole
+indoor seating: chair
+exit sign: sign
+garage: garage
+vending machine: machine
+'##nding machine': machine
+'##work': unlabeled
+'##op': unlabeled
+m lamp: lamp
+'##let': unlabeled
+emergency call: emergency station
+traffic: vehicle
+'##ry': unlabeled
+'##rade': unlabeled
+'##folding': unlabeled
+i: unlabeled
+stop: sign
+streetlights: light
+m: unlabeled
+park: parking lot
+picnic _ table: table
+brick _ wall: wall
+construction _ equipment: equipment
+reserved parking sign: sign
+advertising board: advertisement
+'##walk': unlabeled
+'##leachers': unlabeled
+bo: unlabeled
+'##ust': unlabeled
+mu: unlabeled
+'##d': unlabeled
+'##llar': unlabeled
+st: unlabeled
+'##lights': light
+'- fence': fence
+trash _: trash
+'##ted': unlabeled
+'- link': unlabeled
+'##ing': unlabeled
+'- link fence': fence
+emergency station: emergency station
+'##s': unlabeled
+empty: unlabeled
+'##ted plant': plant
+the scene the image: image
+the image: image
+scene the image: image
+emergency phone: emergency station
+advertising: advertisement
+red: unlabeled
+public bench: bench
+emergency: emergency station
+pavement markings: road marking
+picnic table: table
+backpack: bag
+lighting equipment: street light
+streelight: street light
+link: chain
+receptacle: trash can
+brickwork: brick

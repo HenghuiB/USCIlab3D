@@ -1,0 +1,31 @@
+cam1
+  cameraIntrinsics with properties:
+
+             FocalLength: [642.8714 642.3496]
+          PrincipalPoint: [633.0120 374.9676]
+               ImageSize: [720 1280]
+        RadialDistortion: [-0.0576 0.1241]
+    TangentialDistortion: [0 0]
+                    Skew: 0
+                       K: [3×3 double]
+
+>> tforms
+Unrecognized function or variable 'tforms'.
+ 
+Did you mean:
+>> tform
+
+tform = 
+
+  rigidtform3d with properties:
+
+    Dimensionality: 3
+       Translation: [-0.0272 -0.1770 -0.0233]
+                 R: [3×3 double]
+
+                 A: [ 0.9989   -0.0462   -0.0026   -0.0272
+                     -0.0020    0.0145   -0.9999   -0.1770
+                      0.0462    0.9988    0.0143   -0.0233
+                           0         0         0    1.0000]
+
+cam2

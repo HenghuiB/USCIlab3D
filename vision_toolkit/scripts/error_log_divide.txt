@@ -1,0 +1,12 @@
+/lab/tmpig10b/kiran/bag_dump/2023_06_16/0/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_06_16/1/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_12_18/0/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_06_14/0/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_12_20/0/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_12_20/1/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_12_20/2/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_12_20/3/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_12_20/4/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_07_28/6/all_imgs/
+/lab/tmpig10b/kiran/bag_dump/2023_06_18/0/all_imgs/
+/lab/tmpig13b/kiran/bag_dump/2023_06_18/0/all_imgs/

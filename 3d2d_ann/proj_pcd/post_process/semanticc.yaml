@@ -1,0 +1,82 @@
+labels:
+  0: unlabeled
+  1: window
+  2: handrail
+  3: bench
+  4: sky
+  5: grass
+  6: door
+  7: wall
+  8: outdoor lighting
+  9: pipe
+  10: curb
+  12: roof
+  13: tree
+  14: building
+  15: shrub
+  16: concrete
+  18: pavement
+  21: shadow
+  22: pole
+  23: fence
+  24: person
+  25: lamp post
+  27: bicycle
+  31: drain cover
+  32: light
+  34: cover
+  35: plant
+  36: lawn
+  39: table
+  40: chair
+  41: bush
+  42: planter
+  44: sidewalk
+  45: trash
+  46: parking lot
+  47: sign
+  48: vehicle
+  49: space line
+  52: parking space line
+  53: post
+  55: path
+  57: vegetation
+  60: lamp
+  61: bushes
+  65: stone
+  70: construction barrier
+  72: stop sign
+  73: truck
+  76: street sign
+  78: road
+  79: construction cone
+  82: red curb
+  83: brick
+  84: street
+  86: floor
+  88: pillar
+  91: gate
+  93: sun
+  94: plants
+  102: fire hydrant
+  111: trailer
+  116: bricks
+  137: dumpster
+  138: manhole cover
+  142: road sign
+  160: road marking
+  164: construction fence
+  173: stair
+  175: cone
+  180: space
+  187: bollard
+  206: construction
+  212: garbage can
+  215: rack
+  243: metal
+  281: poster
+  297: tank
+  313: rail
+  386: public bench
+  555: lighting equipment
+  621: emergency station
