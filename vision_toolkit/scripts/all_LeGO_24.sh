@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input file
-input_file="/lab/tmpig10c/kiran/vision_toolkit/scripts/All_sessions1.txt"
+input_file="/lab/tmpig10c/kiran/vision_toolkit/scripts/All_sessions.txt"
 
 
 # Read input file line by line
