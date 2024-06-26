@@ -1,6 +1,6 @@
 # USCILab3D Dataset: A Large-scale, Long-term Outdoor Dataset
 
-Welcome to the repository for the USCILab3D Dataset! This repository contains the code and tools associated with our paper, "USCILab3D Dataset: A Large-scale, Long-term Outdoor Dataset."
+This repository contains the code and tools associated with our paper, "USCILab3D Dataset: A Large-scale, Long-term Outdoor Dataset."
 
 ## Table of Contents
 
