@@ -14,9 +14,7 @@ Welcome to the repository for the USCILab3D Dataset! This repository contains th
   - [Running COLMAP](#running-colmap)
   - [Using GPT-4 and Grounded-SAM](#using-gpt-4-and-grounded-sam)
   - [Projection](#projection)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -37,3 +35,31 @@ To get started, clone the repository and install the necessary dependencies:
 git clone https://github.com/yourusername/USCILab3D-Dataset.git
 cd USCILab3D-Dataset
 # Follow the installation instructions in each subdirectory's README
+
+
+
+
+
+# Usage
+
+## Processing Raw Bagfiles
+Instructions for processing raw bagfiles can be found in the `vision_toolkit` directory. Refer to the `vision_toolkit` README for detailed steps.
+
+## Creating SLAM Info
+Instructions for creating SLAM info are also located in the `vision_toolkit` directory. Refer to the `vision_toolkit` README for detailed steps.
+
+## Dividing Sectors
+To divide sectors, follow the instructions provided in the `vision_toolkit` directory. Refer to the `vision_toolkit` README for detailed steps.
+
+## Running COLMAP
+Instructions for running COLMAP are available in the `vision_toolkit` directory. Refer to the `vision_toolkit` README for detailed steps.
+
+## Using GPT-4 and Grounded-SAM
+The code for GPT-4 and Grounded-SAM is located in the `3d2d_ann` directory. Refer to the `3d2d_ann` README for detailed steps.
+
+## Projection
+Projection-related code and instructions can be found in the `3d2d_ann` directory. Refer to the `3d2d_ann` README for detailed steps.
+
+
+# License
+This project is licensed under the MIT License.
