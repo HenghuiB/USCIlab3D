@@ -1,28 +1,19 @@
-# 3d2d_ann
 
-This repository contains the code to project 3D point cloud to 2D image, doing a correspondence.
+# GPT4
 
-# match.py
-
-To run the match, simply use
-
-```shell
-python match.py 1326035199606919
-```
-It means it will read the 1326035199606919.bin in ./velodyne_sync, and automatically find the closest images of 5 cams.
-
-# project_vel_to_cam.py
-It can project 3D point cloud to 2d.
-
-
-To run the project, simply use
-
-```shell
-python project_vel_to_cam.py vel img cam_num
+To generate GPT-4 output for a specific date, use the following command:```
+./extract_and_gpt4.sh 2023_06_30
 ```
 
-vel:  The velodyne binary file (timestamp.bin)
+To process all dates, you can run:
+```
+./all_got4.sh
+```
 
-img:  The undistorted image (timestamp.tiff)
+# projection
 
-cam_num:  The index (0 through 5) of the camera
+To project 3D points to 2D pixels and label them, run the following script:
+```
+./proj_pcd/proj_final.py --date <date> --session <session> --data_path <data_path> --curr <current_part> --total <total_parts>
+```
+For parallel processing of data, specify total to indicate the total number of parts into which the data is divided, and curr to specify which part is currently being processed.
