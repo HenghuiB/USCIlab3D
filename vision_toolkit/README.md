@@ -1,72 +1,49 @@
 
-# extract python code
+# extract bagfile code
 
-The program takes something as input and saves it into something. You can run it through this command
-
+This program extracts images from bag files and organizes them into structured folders. To run the program, use the following command:
 ```
 ./bag_.sh 2023_06_30
 ```
-It will extract images from bag file,you just have to pass the bag folder, assuming it has cam1, cam2, cam3, cam4, cam5. And it will generate a folder having same name eg 2023_06_30/imgs.
+This command will extract images from the bag files located in /data/. Simply pass the folder name (e.g., 2023_06_30), assuming it contains subfolders named cam1, cam2, cam3, cam4, and cam5. The program will generate an output folder with the same name (e.g., 2023_06_30/imgs).
 
+To process all dates, you can run:
 ```
-python split.py --data 2023_06_30 --intervalfile ./interval.txt
-```
-It will split the images folder according to the interval file.
-
-# 3dobject_tracking
-
-Build instructions:
-(From root directory of the repo, ie. /path/to/3dobject_tracking/)
-
-```
-mkdir build
-cd build
-```
-Then:
-(CMake):
-```
-cmake ../
-make
+./bag_.sh 2023_06_30
 ```
 
-or
-(Ninja):
+# All_sessions.txt
+This file contains the mapping of each session to its corresponding bag files. For example:
 ```
-cmake -G Ninja ../
-ninja
-```
-
-ROS version: http://wiki.ros.org/melodic/Installation (Recommended for Ubuntu 18.04 which is what I have)
-
-# removeNoise
-Removes noise with a value of 0 from a depth image.
-
-With the noisy image named "depthimage.png" in the same directory as the program, run the following command:
-```
-python removeNoise.py
+2023_08_10/0	test_2023-08-10-02-23-01.bag	test_2023-08-09-19-21-48.bag	test_2023-08-09-19-21-51.bag	test_2023-03-02-05-03-14.bag	test_2023-03-02-05-03-04.bag	
 ```
 
-# autostitcher
-Stitches together 5 images into a panorama.
 
-The images are located in a directory named "hello" and are named "cam1.png", "cam2.png", "cam3.png", "cam4.png", "cam5.png". Run the following command in the terminal:
-```
-python autostitcher
-```
-The resulting panorama is outputted with the default file name "testpanorama.png".
+# divide session by sector
 
-# bag_reader
-Reads images from cam[1-5] bag files in the same directory, offsets the image stream of each so that they are of equal length, and merges them into a "merge.bag" file.
-
-When the executable is built, run the following command in the terminal:
+To divide a session into sectors for COLMAP, run:
 ```
-./bag_reader
+./run_divide.sh 2023_06_30
 ```
 
-# bagstitch
-Reads "merged.bag" from the directory and stitches together every set of five images from the image streams (color and depth) using autostitcher.py. The panoramas are stored in the "hello" directory.
-
-Run the following command in the terminal:
+This command divides the session into sectors. To process all dates, use:
 ```
-python bagstitch.py
+./parallel_divide.sh
+```
+
+# SLAM
+
+To run LeGO-LOAM for a bag file and save the data in the corresponding folder, use:
+```
+./run_LeGO_parameter.sh bag_path session date
+```
+To process all dates, run:
+```
+./all_LeGO_24.sh
+```
+
+# COLMAP
+To run COLMAP Structure-from-Motion (SfM) for a specific date with a specified number of threads, use:
+```
+./sub_colmap/run.py date threads
 ```
