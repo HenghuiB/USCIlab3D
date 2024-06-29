@@ -1,13 +1,14 @@
 
 # GPT4
 
-To generate GPT-4 output for a specific date, use the following command:```
+To generate GPT-4 output for a specific date, use the following command:
+```
 ./extract_and_gpt4.sh 2023_06_30
 ```
 
 To process all dates, you can run:
 ```
-./all_got4.sh
+./all_gpt4.sh
 ```
 
 # projection
