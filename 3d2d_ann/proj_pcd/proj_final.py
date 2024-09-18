@@ -39,6 +39,8 @@ def write_ply_point_cloud(filename, points, intensities, proj_dict, label_idx, c
             obj_len = len(set(sublist[2] for sublist in obj))
             obj = sorted(obj, key=lambda x: float(x[0][-5:-1]))[-1]
             obj_name = obj[0][:-6]
+            # if float(obj[0][-5:-1]) < 0.5:
+            #     obj_name = ''
             instance_id = obj[1]
             if obj_name == '':
                 obj_name = 'unlabeled'
@@ -151,44 +153,31 @@ def proj(pcd, img_path, mask_path, proj_dict, instance_id, date, session, ex_dic
     forwards = np.dot(R, points3D.T).T + t.reshape(1,3)
     forwards = np.where((forwards[:, 2] > 0))[0]
     points2D, _ = cv2.projectPoints(points3D, R, t, CAMERA_MATRIX, DIST_COEFFS)
+
+
     
     masks = torch.load(join(mask_path, 'masks.pt'), map_location=torch.device('cpu'))
     with open(join(mask_path, 'labels'), 'rb') as f:
         label = pickle.load(f)
     assert (len(points2D)==len(points3D))
     points2D = points2D.astype(int)
-    pixel_dict = {tuple(loc[0]): idx for idx, loc in enumerate(points2D)}
+    pixel_dict = {}
+    for idx, loc in enumerate(points2D):
+        if idx in forwards:
+            pixel_dict[tuple(loc[0])] = idx
     for idx, mask in enumerate(masks):
         if len(label[idx])<=6:
             continue
         non_zero_indices = torch.nonzero(mask[0]).numpy()
-        tmp = []
         for i in range(len(non_zero_indices)):
             coordinate = (non_zero_indices[i][1], non_zero_indices[i][0])
             if coordinate in pixel_dict.keys():
                 point3d = points3D[pixel_dict[coordinate]]
-                tmp.append(point3d)
-        tmp = np.array(tmp)
-        if len(tmp) < 1:
-            continue
-
-        point_cloud = o3d.geometry.PointCloud()
-        point_cloud.points = o3d.utility.Vector3dVector(tmp)
-        labels = np.array(point_cloud.cluster_dbscan(eps=8, min_points=1, print_progress=False))
-        label_counts = Counter(labels)
-        if -1 in label_counts:
-            del label_counts[-1]
-        if not label_counts:
-            continue
-
-
-        most_frequent_label = label_counts.most_common(1)[0][0]
-        points = tmp[np.where(labels == most_frequent_label)[0]]
-        for point3d in points:
-            if tuple(point3d) not in proj_dict.keys():
-                proj_dict[tuple(point3d)] = [(label[idx], instance_id, cam_num)]
-            else:
-                proj_dict[tuple(point3d)].append((label[idx],instance_id, cam_num))
+                if tuple(point3d) not in proj_dict.keys():
+                    proj_dict[tuple(point3d)] = [(label[idx], instance_id, cam_num)]
+                else:
+                    proj_dict[tuple(point3d)].append((label[idx],instance_id, cam_num))
+   
         instance_id+=1
 
             
@@ -246,7 +235,8 @@ def run(date, session, data_path, curr, total):
             if int(camera[-1]) == 1:
                 cam1_pcd_dict[v_img] = file_name
     print(folder_path.split('/'))
-    SAM_path =  join(data_path, date, session, 'NEW_SAM/')
+    # SAM_path =  join(data_path, date, session, 'NEW_SAM/')
+    SAM_path =  join(data_path, date, session, 'SAM/')
     if not os.path.exists(SAM_path):
         print(f"Error: Folder '{folder_path}'SAM error.")
         return
@@ -290,14 +280,15 @@ def run(date, session, data_path, curr, total):
         
         proj_dict = {}
         instance = 0
-        if os.path.exists(join('/lab/tmpig10c/data_res', date, session, pcd_name[:-4], pcd_name)):
+        if os.path.exists(join('/lab/tmpig10c/acc_data', date, session, pcd_name[:-4], pcd_name)):
             continue
 
         for img_name in pcd_img_dict[pcd_name]:
+
             proj_dict, instance = proj(pcd, join(img_path, img_name), join(SAM_path, img_name[:-4]), proj_dict, instance, date, session, ex_dict)
-        os.makedirs(join('/lab/tmpig10c/data_res', date, session, pcd_name[:-4]), exist_ok=True)
-        label_idx, color_idx, label_inverse = write_ply_point_cloud(join('/lab/tmpig10c/data_res', date, session, pcd_name[:-4], pcd_name), pcd, intensity, proj_dict, label_idx, color_idx, label_inverse)
-        with open(join('/lab/tmpig10c/data_res', date, session, pcd_name[:-4], 'imgs.txt'), 'w') as imagef:
+        os.makedirs(join('/lab/tmpig10c/acc_data', date, session, pcd_name[:-4]), exist_ok=True)
+        label_idx, color_idx, label_inverse = write_ply_point_cloud(join('/lab/tmpig10c/acc_data', date, session, pcd_name[:-4], pcd_name), pcd, intensity, proj_dict, label_idx, color_idx, label_inverse)
+        with open(join('/lab/tmpig10c/acc_data', date, session, pcd_name[:-4], 'imgs.txt'), 'w') as imagef:
             for img_name in pcd_img_dict[pcd_name]:
                 imagef.write(img_name)
                 imagef.write('\n')
